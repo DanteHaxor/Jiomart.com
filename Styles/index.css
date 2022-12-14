@@ -1,1 +1,83 @@
 /* HEY */
+
+.carousel {
+    background: #EEE;
+    margin-top: 20px;
+}
+
+.top-image {
+    width: 98%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel img {
+        height: 300px;
+    }
+}
+
+.main-slider {
+    /* margin: 100px auto; */
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-slider>h1 {
+    margin: 0;
+    margin-left: 40px;
+    padding: 8px 16px 0px 0px;
+    font-size: 20px;
+    color: #000;
+    font-weight: bolder;
+    font-family: JioBold;
+}
+
+.main-slider>span {
+    position: absolute;
+    top: 29%;
+    font-size: 60px;
+    opacity: .35;
+    color: gray;
+    cursor: pointer;
+    left: .5%;
+    z-index: 1;
+}
+
+.main-slider>span:nth-of-type(2) {
+    left: 98%;
+    text-align: right;
+}
+
+.child-slider {
+    width: 95%;
+    /* height: 300px; */
+    margin: auto;
+    /* margin-left: 40px; */
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    padding: 12px 0px;
+}
+
+.child-slider::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.child-slider>div {
+    position: relative;
+    left: 0;
+    min-width: 200px;
+    transition: 0.5s;
+}
+
+.child-slider>div:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.child-slider>div>a>img {
+    width: 93%;
+}
