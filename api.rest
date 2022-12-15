@@ -1,9 +1,9 @@
-POST https://6394836386829c49e81ef11e.mockapi.io/Cart
+POST https://639b037e31877e43d67f1598.mockapi.io/product
 Content-Type: application/json
-
+ 
 {
-  "title":"Onion 1 kg",
-  "price":22.00,
-  "image":"https://www.jiomart.com/images/product/150x150/590003515/onion-1-kg-product-images-o590003515-p590003515-0-202203170724.jpg"
-
+  MRP: 22,
+  type: "Potato",
+  image_url:"https://www.jiomart.com/images/product/150x150/590003516/potato-per-kg-0-20200710.jpg"
 }
+  
