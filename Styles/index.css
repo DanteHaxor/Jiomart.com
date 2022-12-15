@@ -263,6 +263,11 @@ footer {
     }
     .main-page-footer> div {
     box-sizing: border-box;
+    }
+#main-page-footer-div1 ul, #main-page-footer-div2 ul{
+    list-style: none;
+    }
+    #main-page-footer-div3 a, #main-page-footer-div1 a, #main-page-footer-div2 a{
     }ul {
     list-style: none;
     }
