@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Digital Bazaar</title>
+		<link rel="stylesheet" href="Styles/index.css" />
+		<link rel="icon" href="logo.jpg" />
+	</head>
+	<body>
+		<!-- #region - header-->
+		<header>
+			<!-- #region - nav-bar-content-->
+			<div class="nav-bar">
+				<!-- top navbar -->
+				<div class="nav-bar-top">
+					<div class="flex-nav-top">
+						<div class="menu-icon">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="main-logo">
+							<a href="index.html"><img src="logo1.png" alt="logo" /></a>
+						</div>
+						<div class="search-bar">
+							<input
+								type="text"
+								placeholder="Search essentials, groceries, and more ..."
+							/>
+						</div>
+						<div class="login-signup">
+							<div><img src="user.png" alt="" /></div>
+							<div><a href="#"> Sign in / Sign up</a></div>
+						</div>
+						<div class="cart">
+							<div><img src="cart.png" alt="cart" /></div>
+							<div><a href="#">Cart</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- bottom navbar -->
+				<div class="nav-bar-bottom">
+					<div class="flex-nav-bottom">
+						<div class="nav-bar-location">
+							<div>
+								<img src="location.png" alt="" />
+							</div>
+							<div class="location-detail">
+								<p>Deliver to</p>
+								<h4>400020</h4>
+							</div>
+						</div>
+						<div class="nav-bar-options">
+							<div class="upArrow">
+								<a href="#">Groceries</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Premium Fruits</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Home & Kitchen</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Fashion</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Electronics</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Beauty</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Home Improvement</a>
+							</div>
+							<div class="upArrow">
+								<a href="#">Sports, Toys & Luggage</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-
-    /* Footer styles start */
-    footer {
-    background-color: #ebebf8;
-    margin-top: 21px;
-    }
-    .main-page-footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px 100px 30px;
-    }
-    .main-page-footer p,.main-page-footer a {
-    font-size: 13px;
-    font-family: sans-serif;
-    }
-    #main-page-footer-div1,
-    #main-page-footer-div2{
-    line-height: 23px;
-    }
-    #main-page-footer-div3{
-    border-left: 1px solid rgb(189, 184, 184);;   
-    padding-left: 29px; 
-    }
-    #main-page-footer-div3 a{
-    color: #09a2e4;
-    }
-    #main-page-footer-div1 a,
-    #main-page-footer-div2 a,
-    #main-page-footer-div3 p {
-    color: gray;
-    }
-    h3{
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-    .main-page-footer> div {
-    box-sizing: border-box;
-    }ul {
-    list-style: none;
-    }
-    a{
-    text-decoration: none;
-    }
-    #last-line {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 13px;
-    
-    border-top: 1px solid rgb(189, 184, 184);
-    }
-    /* Footer styles end */
-
-
-
-</style>
-<body>
+			<!-- #endregion - nav-bar-->
+		</header>
+		<!-- #endregion - header-->
  <!-- Footer Begins -->
  <footer>
     <div class="main-page-footer">
@@ -149,6 +170,5 @@
     </div>
 </footer>
 <!-- Footer ends -->
-
 </body>
 </html>
