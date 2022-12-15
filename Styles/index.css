@@ -255,16 +255,17 @@ footer {
     #main-page-footer-div3 p {
     color: gray;
     }
-    h3{
+/*     h3{
         text-decoration: none;
         font-family: sans-serif;
-    }
+    } */
     .main-page-footer> div {
     box-sizing: border-box;
-    }ul {
+    }
+#main-page-footer-div1 ul {
     list-style: none;
     }
-    a{
+    #main-page-footer-div3 a{
     text-decoration: none;
     }
     #last-line {
