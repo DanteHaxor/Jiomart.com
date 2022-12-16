@@ -217,7 +217,23 @@ main {
     margin-top: 40px;
 }
 
+/* -------------------------------------------------images------------------------------------ */
+.big-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    justify-content: space-around;
+    gap: 20px;
+    width: 98%;
+    margin:50px auto;
+}
+.big-images>div>a>img{
+    width: 100%;
+}
 /* -------------------------------------------- */
+
+
+
+
 
 /* #region nav-bar */
 
