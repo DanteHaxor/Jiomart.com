@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>zahid</title>
+    <style>
+        /* login styles start */
+        #login-page{
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            font-family: 'Gill Sa ;
+            margin-top: 147px;
+            /* width: 91%; */
+        }
+
+        #login-page-main{
+            display: flex;
+            justify-content: space-between;
+            /* margin: auto; */
+            /* margin-right: 91px; */
+            /* border: 2px solid red; */
+            width: 89%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 17px;
+            /* border-top-right-radius: 17px; */
+            /* border-bottom-right-radius: 17px; */
+            margin-left: 91px;
+        }
+        #login-img>img{
+            border-top-left-radius: 17px;
+            border-bottom-left-radius: 17px;
+            padding-right: 131px;
+            padding-top: 3px;
+        }
+        #login-page-last-line{
+            text-align: center;
+        }
+        .login-div{
+            margin-right: 337px;
+        }
+        .mobDiv{
+            margin-top: 53px;
+        }
+        .mobdiv>input{
+            padding: 5px 23px;
+            border:2px solid red;
+        }
+      
+        .terms,.privacy{
+            color: red;
+        }
+        .arrow>img{
+            margin-left: 79px;
+            margin-top: 23px;
+        }
+        p{
+            color: rgb(104, 103, 103);
+        }
+        /* login styles end */
+    </style>
 </head>
 <body>
-    
+    <!-- login starts -->
+    <div id="login-page" >
+
+        <div id="login-page-main">
+            <div id="login-img" >
+                <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="advertisement">
+            </div>
+            <div class='login-div'>
+                <div >
+                <div class='info'>
+                    <h2>Sign in</h2>
+                    <p id='signininfo'>Sign in to access your Orders, Offers and Wishlist.</p>
+                </div>
+                <div class='mobDiv'>
+                    <span> +91 -</span>
+                        <!-- <input  id='mob' type="number"  placeholder=' Enter Your Mobile Number' size="50" > -->
+                        <input id="box" type="number" size="50" placeholder=' Enter your mobile no.'>
+                    </span>
+                </div>
+                <div class='arrow'>
+                    <img id='sign' src="https://img.icons8.com/ios-filled/60/008ECC/circled-chevron-right.png"/>
+                </div>
+                    
+            </div>
+        </div>    
+        
+        
+    </div>
+    <div id='login-page-last-line'>
+        <p>By continuing you agree to our <span class='terms'>Terms of service</span></br> and <span class='privacy'> Privacy & Legal Policy.</span></p>
+    </div>
+    <!-- login ends -->
 </body>
 </html>
