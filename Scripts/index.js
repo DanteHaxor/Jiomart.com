@@ -1,3 +1,36 @@
+//---------------------------Nav-bar-options--------------------------------//
+
+let hiddenDiv = document.querySelectorAll(".subOptions");
+let title = document.querySelectorAll(".upArrow");
+
+for (let i = 0; i < hiddenDiv.length; i++) {
+	title[i].onmouseover = () => {
+		hiddenDiv[i].style.display = "block";
+	};
+	title[i].onmouseout = () => {
+		hiddenDiv[i].style.display = "none";
+	};
+	hiddenDiv[i].onmouseover = () => {
+		hiddenDiv[i].style.display = "block";
+	};
+	hiddenDiv[i].onmouseout = () => {
+		hiddenDiv[i].style.display = "none";
+	};
+}
+
+//---------------------------Nav-bar-options-end-------------------------------//
+
+//----------------------------side-navbar--------------------------------//
+
+function sidenav() {
+	document.getElementById("mysidebar").style.width = "330px";
+}
+
+function closenav() {
+	document.getElementById("mysidebar").style.width = "0";
+}
+
+
 let span = document.querySelectorAll("#top-trend span");
 let div = document.querySelectorAll("#Trending-brands div");
 let l = 0;
@@ -69,8 +102,8 @@ function renderData(data){
         <a><div class="prod-img"><img src=${el.image}></div>
         <div class="prod-disc">
         <span>${el.title}</span>
-        <p class="pro-price">$ ${el.price}</p>
-        <span>Save $${el.discount}</div>
+        <p class="pro-price">₹ ${el.price}</p>
+        <span>Save ₹${el.discount}</div>
         </a>
         <div class="add-cart"><p>Add to Cart</p><span>+</span></div>
         </div>`
@@ -103,12 +136,31 @@ function renderData(data){
         }
     }
 }
-
 //---------------------------------------products card render end------------------------------------//
 
-//---------------------------------------products card slider start------------------------------------//
+//---------------------------------------daily kitchen start------------------------------------//
+let span3 = document.querySelectorAll("#Daily-Kitchen span");
+let div3 = document.querySelectorAll("#Kitchen-category div");
+let l3 = 0;
+span3[1].onclick = () => {
+    l3++;
+    for (let i of div3) {
+        if (l3 == 0) { i.style.left = "0px"; }
+        if (l3 == 1) { i.style.left = "-200px"; }
+        if (l3 == 2) { i.style.left = "-400px"; }
+        if (l3 > 2) { l3 = 2; }
+    }
+}
+span3[0].onclick = () => {
+    l3--;
+    for (let i of div3) {
+        if (l3 == 0) { i.style.left = "0px"; }
+        if (l3 == 1) { i.style.left = "-200px"; }
+        if (l3 == 2) { i.style.left = "-400px"; }
+        if (l3 < 0) { l3 = 0; }
+    }
+}
 
 
 
-
-//---------------------------------------products card slider end------------------------------------//
+//---------------------------------------daily kitchen  end------------------------------------//
