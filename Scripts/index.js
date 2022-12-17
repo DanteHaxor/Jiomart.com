@@ -254,7 +254,6 @@ function renderpicks(data) {
       if (l3 > 5) {
         l3 = 5;
       }
-      console.log(i);
     }
   };
   span3[0].onclick = () => {
