@@ -239,9 +239,10 @@ main {
 /* #region nav-bar */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar {
@@ -675,7 +676,7 @@ a {
   position: fixed;
   background: white;
   top: 4.48rem;
-  left: 23rem;
+  left: 24.3rem;
   z-index: 1000;
   display: none;
   width: 45.8%;
