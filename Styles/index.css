@@ -156,7 +156,6 @@ main {
   padding: 5px;
   transition: 0.5s;
 }
-
 .prod-img > img:hover {
   transform: scale(1.1);
   z-index: 2;
