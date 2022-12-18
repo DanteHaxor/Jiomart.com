@@ -94,3 +94,30 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 //------------------------------------------------------------//
+
+//-------------------------products card render start----------------------------------------//
+
+let DealsSection = document.getElementById("top-deals");
+async function products() {
+	let res = await fetch("https://639b037e31877e43d67f1598.mockapi.io/crud");
+	let data = await res.json();
+	renderData(data);
+}
+products();
+
+function renderData(data) {
+	DealsSection.innerHTML = `${data
+		.map((el) => {
+			return `<div>
+			<a><div class="prod-img"><img src=${el.image}></div>
+			<div class="prod-disc">
+			<span>${el.type}</span>
+			<p class="pro-price">₹ ${el.MRP}</p>
+			</div>
+			</a>
+			<div class="add-cart"><p>Add to Cart</p><span>+</span></div>
+			</div>`;
+		})
+		.join(" ")}`;
+}
+//---------------------------------------products card render end------------------------------------//
