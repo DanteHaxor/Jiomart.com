@@ -157,7 +157,7 @@
 						</div>
 						<div class="login-signup">
 							<div><img src="user.png" alt="" /></div>
-							<div><a href="login.html"> Sign in / Sign up</a></div>
+							<a href="login.html" id="signIn_Logout"> Sign in / Sign up</a></div>
 						</div>
 						<div class="cart">
 							<div><img src="cart.png" alt="cart" /></div>
@@ -1178,7 +1178,19 @@
 
     <div class="search-items"></div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+</html>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script type="text/javascript" src="./Scripts/index.js"></script>
-</html>
+  <script>
+<script>
+   changeName = document.querySelector("#hello_text")
+   let userLocal = localStorage.getItem("userName")
+   changeName.innerText =userLocal || "Hello, Sign in"
+   let user2local = localStorage.getItem("logout");
+   logOut = document.querySelector("#signIn_Logout")
+   logOut.innerText = user2local || " Sign in / Sign up";
+
+</script>
+
