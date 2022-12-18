@@ -11,5 +11,5 @@ closebtn.addEventListener("click",()=>{
 })
 themetoggler.addEventListener("click",()=>{
     document.body.classList.toggle("dark-theme-variables");
-    themetoggler.querySelector("span").classList.toggle("active");
+    themetoggler.querySelector("span").classList.toggle("active"); 
 })
