@@ -7,6 +7,7 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/Admin/Style/dashboard.css">
+    <link rel="stylesheet" href="/Admin/Style/responsive.css">
 </head>
 <body>
     <div class="container">
@@ -22,19 +23,19 @@
                     </div>
                 </div>
                 <div class="sidebar">
-                    <a href="#">
+                    <a href="/Admin/dashboard.html" class="active">
                         <span class="material-symbols-sharp">
                             grid_view
                             </span>
                             <h3>Dashboard</h3>
                     </a>
-                    <a href="#" class="active">
+                    <a href="#">
                         <span class="material-symbols-sharp">
                             person
                             </span>
                             <h3>Customers</h3>
                     </a>
-                    <a href="#">
+                    <a href="/Admin/orders.html">
                         <span class="material-symbols-sharp">
                             receipt_long
                             </span>
@@ -52,7 +53,7 @@
                             </span>
                             <h3>Messages</h3>
                     </a>
-                    <a href="#">
+                    <a href="/Admin/inventory.html">
                         <span class="material-symbols-sharp">
                             inventory
                             </span>
@@ -70,13 +71,13 @@
                             </span>
                             <h3>Settings</h3>
                     </a>
-                    <a href="#">
+                    <a href="/Admin/addproduct.html">
                         <span class="material-symbols-sharp">
                             add
                             </span>
                             <h3>Add Product</h3>
                     </a>
-                    <a href="#">
+                    <a href="/Admin/login.html">
                         <span class="material-symbols-sharp">
                             logout
                             </span>
@@ -317,5 +318,6 @@
                 </div>
             </div>
     </div>
+    <script src="/Admin/Script/dashboard.js"></script>
 </body>
 </html>

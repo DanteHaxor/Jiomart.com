@@ -476,9 +476,21 @@ body {
     padding: 10px;
     height: 345px;
     overflow: scroll;
+    margin-bottom: 20px;
 }
 
-.categories {
+.LeftBox2 {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    height: auto;
+    overflow: scroll;
+    margin-bottom: 20px;
+    width: 273px;
+}
+
+.categories,
+.filter {
     font-size: 20px;
     padding-left: 12px;
     padding-top: 16px;
@@ -497,7 +509,7 @@ body {
     line-height: 25px;
 }
 
-.prod-con-dropdown {
+.collapsible {
     padding-top: 8px;
     display: flex;
     width: 90%;
@@ -505,12 +517,141 @@ body {
     background-color: transparent;
     font-size: 15px;
     height: 35px;
+    color: grey;
 }
 
 .LeftBox img {
-    height: 15px;
+    height: 12px;
     margin-right: 5px;
 }
 
+.prod-content a {
+    color: grey;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.collapsible:hover,
+.prod-content a:hover {
+    color: rgb(61, 59, 59);
+}
+
+.rightBar {
+    width: 78%;
+    margin-left: 3rem;
+}
+
+.banner {
+    height: 15rem;
+    width: 100%;
+    background-image: url('https://www.jiomart.com/images/category/2/groceries-20210201.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* -------------------------------------------- */
+
+.sortingCls {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.sortingCls>p:nth-child(1) {
+    margin-right: 41%;
+}
+
+.sortingCls>button,
+#sortName,
+#sortPrice {
+    text-align: center;
+    color: rgb(71, 71, 71);
+    height: 30px;
+    width: 100px;
+    font-size: 13px;
+    background-color: white;
+    border: transparent;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.sortingCls>button:hover,
+#sortName:hover,
+#sortPrice:hover {
+    cursor: pointer;
+    border: 1px solid #008ecc;
+    transition: 0.2s;
+}
+
+.productsVeg {
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+
+.productsVeg>h3 {
+    margin-bottom: 15px;
+}
+
+.productsVeg>div {
+    background-color: white;
+}
+
+.child-cards {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+
+.prod-img {
+    height: 245px;
+    align-items: center;
+    text-align: center;
+}
+
+.prod-img>img {
+    height: 90%;
+    margin-bottom: 10px;
+}
+
+.prod-img>img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+}
+
+.child-cards>div {
+    outline: 1px solid rgb(169, 168, 168);
+    line-height: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.pro-price {
+    font-weight: bold;
+}
+
+.add-cart {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px 0px;
+    font-weight: bold;
+    background-color: rgb(0, 142, 204);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+}

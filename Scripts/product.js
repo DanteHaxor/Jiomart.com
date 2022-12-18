@@ -62,4 +62,62 @@ items.onclick = () => {
 	items.style.display = "none";
 };
 
+let main = document.querySelector("body");
+
+main.onclick = () => {
+	items.style.display = "none";
+};
+
 //-----------------------------search-bar-end--------------------------------//
+
+function order() {
+	window.location.href = "cart.html";
+}
+
+function pincode() {
+	window.location.href = "https://www.google.com/maps";
+}
+
+//------------------------------------------------------------//
+
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";
+		}
+	});
+}
+
+//------------------------------------------------------------//
+
+//-------------------------products card render start----------------------------------------//
+
+let DealsSection = document.getElementById("top-deals");
+async function products() {
+	let res = await fetch("https://639b037e31877e43d67f1598.mockapi.io/crud");
+	let data = await res.json();
+	renderData(data);
+}
+products();
+
+function renderData(data) {
+	DealsSection.innerHTML = `${data
+		.map((el) => {
+			return `<div>
+			<a><div class="prod-img"><img src=${el.image}></div>
+			<div class="prod-disc">
+			<span>${el.type}</span>
+			<p class="pro-price">₹ ${el.MRP}</p>
+			</div>
+			</a>
+			<div class="add-cart"><p>Add to Cart</p><span>+</span></div>
+			</div>`;
+		})
+		.join(" ")}`;
+}
+//---------------------------------------products card render end------------------------------------//

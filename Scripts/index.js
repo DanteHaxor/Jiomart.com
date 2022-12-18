@@ -254,7 +254,6 @@ function renderpicks(data) {
       if (l3 > 5) {
         l3 = 5;
       }
-      console.log(i);
     }
   };
   span3[0].onclick = () => {
@@ -362,46 +361,82 @@ function renderbotpicks(data) {
 //---------------------------------------bottom picks card render end------------------------------------//
 
 //---------------------------------------daily kitchen start------------------------------------//
-let span4 = document.querySelectorAll("#Daily-Kitchen span");
-let div3 = document.querySelectorAll("#Kitchen-category div");
-let l3 = 0;
-span4[1].onclick = () => {
-  l3++;
-  for (let i of div3) {
-    if (l3 == 0) {
+let span5 = document.querySelectorAll("#Daily-Kitchen span");
+let div5 = document.querySelectorAll("#Kitchen-category div");
+let l5 = 0;
+span5[1].onclick = () => {
+  l5++;
+  for (let i of div5) {
+    if (l5 == 0) {
       i.style.left = "0px";
     }
-    if (l3 == 1) {
+    if (l5 == 1) {
       i.style.left = "-200px";
     }
-    if (l3 == 2) {
+    if (l5 == 2) {
       i.style.left = "-400px";
     }
-    if (l3 > 2) {
-      l3 = 2;
+    if (l5 > 2) {
+      l5 = 2;
     }
   }
 };
-span4[0].onclick = () => {
-  l3--;
-  for (let i of div3) {
-    if (l3 == 0) {
+span5[0].onclick = () => {
+  l5--;
+  for (let i of div5) {
+    if (l5 == 0) {
       i.style.left = "0px";
     }
-    if (l3 == 1) {
+    if (l5 == 1) {
       i.style.left = "-200px";
     }
-    if (l3 == 2) {
+    if (l5 == 2) {
       i.style.left = "-400px";
     }
-    if (l3 < 0) {
-      l3 = 0;
+    if (l5 < 0) {
+      l5 = 0;
     }
   }
 };
 
 //---------------------------------------daily kitchen  end------------------------------------//
-
+let span6 = document.querySelectorAll("#home-living span");
+let div6 = document.querySelectorAll("#home-category div");
+let l6 = 0;
+span6[1].onclick = () => {
+  l6++;
+  for (let i of div6) {
+    if (l6 == 0) {
+      i.style.left = "0px";
+    }
+    if (l6 == 1) {
+      i.style.left = "-200px";
+    }
+    if (l6 == 2) {
+      i.style.left = "-400px";
+    }
+    if (l6 > 2) {
+      l6 = 2;
+    }
+  }
+};
+span6[0].onclick = () => {
+  l6--;
+  for (let i of div6) {
+    if (l6 == 0) {
+      i.style.left = "0px";
+    }
+    if (l6 == 1) {
+      i.style.left = "-200px";
+    }
+    if (l6 == 2) {
+      i.style.left = "-400px";
+    }
+    if (l6 < 0) {
+      l6 = 0;
+    }
+  }
+};
 // -------------------------------todo----------------------------------------------------------//
 
 let items = document.querySelector(".search-items");
