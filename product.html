@@ -7,6 +7,7 @@
 		<title>Buy Grocery Online</title>
 		<link rel="stylesheet" href="Styles/product.css" />
 		<link rel="icon" href="image/logo.jpg" />
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
 	<body>
 		<!-- #region - header-->
@@ -655,12 +656,12 @@
 							<p>Showing <b>20</b> of <b>243336</b> items</p>
 							<p>Sort by:</p>
 							<select id="sortName" onchange="nameSort()">
-								<option>Name</option>
-								<option value="nasc">Ascending</option>
-								<option value="ndsc">Descending</option>
+								<option value="">Name</option>
+								<option value="asc">Ascending</option>
+								<option value="dsc">Descending</option>
 							</select>
 							<select id="sortPrice" onchange="priceSort()">
-								<option>Price</option>
+								<option value="">Price</option>
 								<option value="asc">Low To High</option>
 								<option value="dsc">High To Low</option>
 							</select>

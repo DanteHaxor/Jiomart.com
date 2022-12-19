@@ -1,9 +1,9 @@
-POST https://639b037e31877e43d67f1598.mockapi.io/product
+POST https://639b037e31877e43d67f1598.mockapi.io/crud
 Content-Type: application/json
  
 {
-  MRP: 22,
-  type: "Potato",
-  image_url:"https://www.jiomart.com/images/product/150x150/590003516/potato-per-kg-0-20200710.jpg"
+  "MRP": 22,
+  "type": "Potato",
+  "image_url":"https://www.jiomart.com/images/product/150x150/590003516/potato-per-kg-0-20200710.jpg"
 }
   
