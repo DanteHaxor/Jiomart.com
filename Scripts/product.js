@@ -105,6 +105,8 @@ async function products() {
 }
 products();
 
+//---------------------------------------sort by price-----------------------------------------------//
+
 function priceSort() {
 	let mrp = document.querySelector("#sortPrice").value;
 	let str = "";
@@ -139,6 +141,42 @@ async function SortPriceHTL(MRP) {
 	renderData(data);
 }
 
+//---------------------------------------sort by type-----------------------------------------------//
+
+function nameSort() {
+	let mrp = document.querySelector("#sortName").value;
+	let str = "";
+
+	if (mrp == "asc") {
+		str = "type";
+		SortPriceLTH(str);
+	}
+	if (mrp == "dsc") {
+		str = "type";
+		SortPriceHTL(str);
+	}
+
+	if (mrp == "") {
+		products();
+	}
+}
+
+async function SortPriceLTH(type) {
+	let res = await fetch(
+		`https://639b037e31877e43d67f1598.mockapi.io/crud?sortBy=${type}`
+	);
+	let data = await res.json();
+	renderData(data);
+}
+
+async function SortPriceHTL(type) {
+	let res = await fetch(
+		`https://639b037e31877e43d67f1598.mockapi.io/crud?sortBy=${type}&order=desc`
+	);
+	let data = await res.json();
+	renderData(data);
+}
+
 //------------------------------------------------------------//
 
 function renderData(data) {
@@ -157,5 +195,3 @@ function renderData(data) {
 		.join(" ")}`;
 }
 //---------------------------------------products card render end------------------------------------//
-
-//---------------------------------------sort-----------------------------------------------//
