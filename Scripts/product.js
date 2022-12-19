@@ -193,5 +193,13 @@ function renderData(data) {
 			</div>`;
 		})
 		.join(" ")}`;
+	let addCart = document.querySelectorAll(".add-cart");
+	addCart.forEach((el) => {
+		el.addEventListener("click", (e) => {
+			swal("", "Product added to Cart!", "success");
+		});
+	});
 }
 //---------------------------------------products card render end------------------------------------//
+
+//-----------------------------cart page----------------------------------//
