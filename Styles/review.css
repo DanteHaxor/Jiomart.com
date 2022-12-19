@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  header > div {
+    background-color: rgb(0, 142, 204);
+    padding-left: 200px;
+  }
+
+  main {
+    background-color: rgb(246, 246, 247);
+    height: 100vh;
+    padding-top: 50px;
+  }
+  #cart-page-top-layer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .cart-page-top-layer-left {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .cart-page-top-layer-right {
+    display: flex;
+  }
+
+  .cart-page-top-layer-right > hr {
+    height: 0.1px;
+    width: 100px;
+    margin: 15px 10px 0px 5px;
+  }
+  .cart-page-top-layer-right > span {
+    margin: 5px 5px 0px 9px;
+  }
+
+  #cart-page-bottom-layer{
+width: 80%;
+margin: auto;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+}
+#right-side-cart-items{
+width: 45%;
+}
+#cart-page-bottom-layer-left-side{
+width: 50%;
+background-color: white;
+height: auto;
+padding: 20px;
+}
+
+
+#payment-details-final{
+padding: 24px 0px;
+background: #fff;   
+border-radius: 4px;  
+}
+#payment-details-final>div{
+width: 80%;
+margin: auto;
+}  
+#payment-details-final>div>div>h3{
+margin-bottom: 20px;
+}
+#payment-details-final>div>div{
+margin: 10px 0px ;
+}
+#payment-details-final>div>div>p:nth-child(1){
+color: grey;
+font-weight: 400;
+font-size: 14px;
+}
+#payment-btn>button{
+width: 200px;
+height: 40px;
+background-color:#008ECC ;
+color: white;
+border-radius: 5px;
+border: none;
+margin-top: 20px;
+font-size: 16px;
+float: right;
+}
+#saved-price{
+color: rgb(81, 129, 8);
+} 
+
+#form {
+display: flex;
+flex-direction: column;
+}
+#details{
+width: 80%;
+margin: auto;
+line-height: 2.8rem;
+}
+#details input,select {
+font-size: 1rem;
+outline: none;
+padding:10px 0px 10px 10px ;
+}
+#details h3{
+font-size: 1.5rem;
+}
+
+label {
+font-size: 1.2rem;
+color: rgb(56, 56, 56);
+}
+#details  {
+margin-bottom: 4rem;
+}
+#savebtn {
+width: 100%;
+border-radius: 5px;
+margin-top: 2rem;
+background-color: rgb(0,141,203);
+color: white; 
+border: none;
+font-size: larger;
+}
+#savebtn:hover{
+cursor: pointer;
+background-color: rgb(48, 162, 210);
+}
+
+
+.amount,.ttlamt,.disct{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-page-top-layer-left{
+    display: flex;
+}
+

@@ -134,6 +134,22 @@ async function products() {
 }
 products();
 
+async function test(id){
+  let res= await fetch(`https://639b1b94d5141501974b716f.mockapi.io/cart/${id}`);
+  let data= await res.json()
+  sendData(data)
+}
+
+async function sendData(data){
+    let res=await fetch("https://639b1b94d5141501974b716f.mockapi.io/AddCart",{
+      method:"POST",
+      headers:{
+        "content-type":"application/json"
+      },
+      body:JSON.stringify(data)
+    }) 
+}
+
 function renderData(data) {
   DealsSection.innerHTML = `${data
     .map((el) => {
@@ -144,10 +160,20 @@ function renderData(data) {
         <p class="pro-price">₹ ${el.price}</p>
         <span>Save ₹${el.discount}</div>
         </a>
-        <div class="add-cart"><p>Add to Cart</p><span>+</span></div>
+        <button class="add-cart" data-id="${el.id}">Add to Cart</button>
         </div>`;
     })
     .join(" ")}`;
+    
+    let addCartBtn=document.querySelectorAll(".add-cart");
+    addCartBtn.forEach((el)=>{
+      el.addEventListener("click",(el)=>{
+        var id=el.target.dataset.id
+        test(id)
+      })
+    })
+
+
   let span2 = document.querySelectorAll("#Deals>span");
   let div2 = document.querySelectorAll("#top-deals>div");
   let l2 = 0;
@@ -175,7 +201,6 @@ function renderData(data) {
       if (l2 > 5) {
         l2 = 5;
       }
-      console.log(i);
     }
   };
   span2[0].onclick = () => {
