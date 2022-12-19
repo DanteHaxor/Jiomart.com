@@ -31,40 +31,41 @@ function closenav() {
 //---------------------------side-navbar-end--------------------------------//
 
 // --------------------------sign up page-----------------------------------//
-let signUp =document.getElementById("sign");
-let signUpform=document.querySelector("#afterClick form");
+let signUp = document.getElementById("sign");
+let signUpform = document.querySelector("#afterClick form");
 
-
-
-signUp.addEventListener("click",function(){
-    // event.preventDefault();
-    alert("User Not Found"+"\n"+"Create An Account First")
-  
-    loginForm();
-
-    // console.log("works")
-
+signUp.addEventListener("click", function () {
+	Swal.fire({
+		icon: "error",
+		title: "Oops...",
+		text: "You do not have registered yet, Please create an account first.",
+	});
+	loginForm();
 });
-function loginForm(){
 
-document.querySelector('#form').hidden = false ;
-document.getElementById('Gotp').hidden = true;
-document.querySelector('#loginbtn').hidden = false ;
-document.querySelector('#otp').hidden = false ;
-document.querySelector('#name').value ="";
-document.querySelector('#email').value ="";
-document.querySelector('#Date').value ="";
-document.querySelector('#gen').value ="";
-document.querySelector('#otpnum').value ="";
-var mobNum = document.querySelector('#mob').value ;
+function loginForm() {
+	document.querySelector("#form").hidden = false;
+	document.getElementById("Gotp").hidden = true;
+	document.querySelector("#loginbtn").hidden = false;
+	document.querySelector("#otp").hidden = false;
+	document.querySelector("#name").value = "";
+	document.querySelector("#email").value = "";
+	document.querySelector("#Date").value = "";
+	document.querySelector("#gen").value = "";
+	document.querySelector("#otpnum").value = "";
+	var mobNum = document.querySelector("#mob").value;
 }
 
-signUpform.addEventListener("submit",function (event){
-    event.preventDefault();
-    nameValue = document.querySelector('#name').value;
-    localStorage.setItem("userName",nameValue);
-    localStorage.setItem("logout","Log Out")
-    console.log("worked");
-    alert("User has been succesfully created"+"\n"+"Redirecting you to main page")
-    window.location.href="index.html";
-})
+signUpform.addEventListener("submit", function (event) {
+	event.preventDefault();
+	nameValue = document.querySelector("#name").value;
+	localStorage.setItem("userName", nameValue);
+	localStorage.setItem("logout", "Log Out");
+	console.log("worked");
+	swal(
+		"Account has been succesfully created!",
+		"Redirecting you to the main page",
+		"success"
+	);
+	window.location.href = "index.html";
+});

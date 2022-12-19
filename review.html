@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/review.css">
-    <title>review</title>
-  </head>
-  <body>
-    <header>
-      <div><img src="./image/logo1.png" alt="" width="10%" /></div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Styles/review.css" />
+		<link rel="icon" href="image/logo.jpg" />
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <main>
-      <div id="cart-page-top-layer">
-        <div class="cart-page-top-layer-left">
-          <p>Order Summary</p>
-          <span></span>
-        </div>
-        <div class="cart-page-top-layer-right">
-          <img
-            src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
-            alt=""
-          /><span>Cart</span>
-          <hr />
-          <img
-            id="order-sum"
-            src="https://www.jiomart.com/msassets/images/icons/orders_review_active.svg"
-            alt=""
-          /><span>Order Summary</span>
-          <hr />
-          <img
-            id="paym"
-            src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
-            alt=""
-          /><span>Payment</span>
-        </div>
-      </div>
+		<title>review</title>
+	</head>
+	<body>
+		<header>
+			<div><img src="./image/logo1.png" alt="" width="10%" /></div>
+		</header>
 
+		<main>
+			<div id="cart-page-top-layer">
+				<div class="cart-page-top-layer-left">
+					<p>Order Summary</p>
+					<span></span>
+				</div>
+				<div class="cart-page-top-layer-right">
+					<img
+						src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
+						alt=""
+					/><span onclick="cartMain()">Cart</span>
+					<hr />
+					<img
+						id="order-sum"
+						src="https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg"
+						alt=""
+					/><span onclick="summary()">Order Summary</span>
+					<hr />
+					<img
+						id="paym"
+						src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
+						alt=""
+					/><span onclick="payment()">Payment</span>
+				</div>
+			</div>
 
+			<div id="cart-page-bottom-layer">
+				<div id="cart-page-bottom-layer-left-side">
+					<div id="details">
+						<h3>Select Delivery Address</h3>
+						<form action="" id="form" onsubmit="submit()">
+							<label for="">PinCode</label>
+							<input type="text" placeholder="Pin code" id="pin" required />
+							<label for="">House No</label>
+							<input
+								type="text"
+								placeholder="Flat / House No."
+								id="lastn"
+								required
+							/>
+							<label for="">Address</label>
+							<input type="text" id="add" placeholder=" Address" required />
+							<label for="">Bookmark</label>
+							<input
+								type="text"
+								id="code"
+								placeholder="Landmark / Area"
+								required
+							/>
+							<label for="">City</label>
+							<select name="" id="city">
+								<option value="Delhi">Delhi</option>
+								<option value="Haryana">Chhattisgarh</option>
+								<option value="Gujarat">Gujarat</option>
+								<option value="West Bengal">West Bengal</option>
+								<option value="Maharashtra">Maharashtra</option>
+								<option value="Uttar Pradesh">Uttar Pradesh</option>
+								<option value="Uttarakhand">Uttarakhand</option>
+								<option value="Bihar">Bihar</option>
+								<option value="Kerala">Kerala</option>
+								<option value="Punjab">Punjab</option>
+							</select>
+							<label for="">Phone Number</label>
+							<input type="Number" id="number" placeholder="Enter Number" />
+							<input
+								type="submit"
+								id="savebtn"
+								onsubmit="submit()"
+								placeholder="Save address"
+							/>
+						</form>
+						<!-- <button id="proceedbtn" onclick="proceedbtnfunc()">PROCEED TO PAYMENT</button> -->
+					</div>
+				</div>
 
+				<div id="right-side-cart-items">
+					<div id="payment-details-final">
+						<div>
+							<div>
+								<h3>Payment details</h3>
+							</div>
+							<div class="amount">
+								<p>MRP Total</p>
+								<span id="total_bill_amount"></span>
+							</div>
+							<hr />
+							<div class="disct">
+								<p>Product discount</p>
+								<p id="Discounted-Price"></p>
+							</div>
+							<hr />
+							<div class="ttlamt">
+								<p>Total Amount</p>
+								<p id="checkout_price"></p>
+							</div>
+							<div>
+								<p>
+									<!--  -->
+								</p>
+								<p id="saved-price"></p>
+							</div>
+						</div>
+					</div>
+					<div id="payment-btn">
+						<button id="make-payment">Make a Payment</button>
+					</div>
+				</div>
+			</div>
+		</main>
 
-      <div id="cart-page-bottom-layer">
-        <div id="cart-page-bottom-layer-left-side">
-            <div id="details">
-                <h3>Select Delivery Address</h3>
-                <form action="" id="form">
-                  <label for="">PinCode</label>
-                  <input type="text" placeholder="Pin code" id="pin" required />
-                  <label for="">House No</label>
-                  <input type="text" placeholder="Flat / House No." id="lastn" required />
-                  <label for="">Address</label>
-                  <input type="text" id="add" placeholder=" Address" required />
-                  <label for="">Bookmark</label>
-                  <input type="text" id="code" placeholder="Landmark / Area" required />
-                  <label for="">City</label>
-                  <select name="" id="city">
-                      <option value="Delhi">Delhi</option>
-                      <option value="Gujarat">Gujarat</option>
-                      <option value="West Bengal">West Bengal</option>
-                      <option value="Maharashtra">Maharashtra</option>
-                      <option value="Uttar Pradesh">Uttar Pradesh</option>
-                      <option value="Uttarakhand">Uttarakhand</option>
-                      <option value="Bihar">Bihar</option>
-                      <option value="Kerala">Kerala</option>
-                      <option value="Punjab">Punjab</option>
-                  </select>
-                  <label for="">Phone Number</label>
-                  <input type="Number" id="number" placeholder="Enter Number">
-                  <input type="submit" id="savebtn" placeholder="Save address">
-                </form>
-                <!-- <button id="proceedbtn" onclick="proceedbtnfunc()">PROCEED TO PAYMENT</button> -->
-              </div>
-          
-        </div>
-
-        <div id="right-side-cart-items">
-          <div id="payment-details-final">
-            <div>
-              <div>
-                <h3>Payment details</h3>
-              </div>
-              <div class="amount">
-                <p>MRP Total</p>
-                <span id="total_bill_amount"></span>
-              </div>
-              <hr />
-              <div class="disct">
-                <p>Product discount</p>
-                <p id="Discounted-Price"></p>
-              </div>
-              <hr />
-              <div class="ttlamt">
-                <p>Total Amount</p>
-                <p id="checkout_price"></p>
-              </div>
-              <div>
-                <p>
-                  <!--  -->
-                </p>
-                <p id="saved-price"></p>
-              </div>
-            </div>
-          </div>
-          <div id="payment-btn">
-           
-            <button id="make-payment">Make a Payment</button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-    <script src="./Scripts/review.js"></script>
-  </body>
+		<script src="./Scripts/review.js"></script>
+	</body>
 </html>

@@ -1,397 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="./Styles/cart.css" />
-  </head>
-  <body>
-    <header>
-      <div class="search-items"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cart Page</title>
+		<link rel="stylesheet" href="./Styles/cart.css" />
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="icon" href="image/logo.jpg" />
+	</head>
+	<body>
+		<header>
+			<div class="search-items"></div>
 
-      <div class="Grocery subOptions">
-        <div class="dropdown-content">
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bakery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Foods</p>
-          <p>Beverages</p>
-          <p>Personal Care</p>
-          <p>Home Care</p>
-          <p>Apparel</p>
-          <p>Home & Kitchen</p>
-          <p>Mom & Baby Care</p>
-          <p>Books</p>
-          <p>Pets</p>
-        </div>
-      </div>
+			<div class="Grocery subOptions">
+				<div class="dropdown-content">
+					<p>Fruits & Vegetables</p>
+					<p>Dairy & Bakery</p>
+					<p>Staples</p>
+					<p>Snacks & Branded Foods</p>
+					<p>Beverages</p>
+					<p>Personal Care</p>
+					<p>Home Care</p>
+					<p>Apparel</p>
+					<p>Home & Kitchen</p>
+					<p>Mom & Baby Care</p>
+					<p>Books</p>
+					<p>Pets</p>
+				</div>
+			</div>
 
-      <div class="Fruits subOptions">
-        <div class="dropdown-content">
-          <p>Apples & Pears</p>
-          <p>Avocado, Peach, Plum</p>
-          <p>Banana,Melons & Coconut</p>
-          <p>Cherries, Berries & Exotic Fruits</p>
-          <p>Citrus, Mango & Grapes</p>
-          <p>Dates</p>
-          <p>Gift, Assorted & XL Packs</p>
-          <p>Pomegranate, Papaya & Pineapple</p>
-          <p>Seasonal & Minor Fruits</p>
-        </div>
-      </div>
+			<div class="Fruits subOptions">
+				<div class="dropdown-content">
+					<p>Apples & Pears</p>
+					<p>Avocado, Peach, Plum</p>
+					<p>Banana,Melons & Coconut</p>
+					<p>Cherries, Berries & Exotic Fruits</p>
+					<p>Citrus, Mango & Grapes</p>
+					<p>Dates</p>
+					<p>Gift, Assorted & XL Packs</p>
+					<p>Pomegranate, Papaya & Pineapple</p>
+					<p>Seasonal & Minor Fruits</p>
+				</div>
+			</div>
 
-      <div class="Home subOptions">
-        <div class="dropdown-content">
-          <p>Bathroom & Laundry Accessories</p>
-          <p>Disposables</p>
-          <p>Furnishing</p>
-          <p>Furniture</p>
-          <p>Garden & Outdoor</p>
-          <p>Home Decor</p>
-          <p>Kitchenware</p>
-          <p>Prayer & Spiritual Needs</p>
-          <p>Tableware</p>
-        </div>
-      </div>
+			<div class="Home subOptions">
+				<div class="dropdown-content">
+					<p>Bathroom & Laundry Accessories</p>
+					<p>Disposables</p>
+					<p>Furnishing</p>
+					<p>Furniture</p>
+					<p>Garden & Outdoor</p>
+					<p>Home Decor</p>
+					<p>Kitchenware</p>
+					<p>Prayer & Spiritual Needs</p>
+					<p>Tableware</p>
+				</div>
+			</div>
 
-      <div class="Fashion subOptions">
-        <div class="dropdown-content">
-          <p>Men</p>
-          <p>Women</p>
-          <p>Boys</p>
-          <p>Girls</p>
-          <p>Junior Boys</p>
-          <p>Infants</p>
-        </div>
-      </div>
+			<div class="Fashion subOptions">
+				<div class="dropdown-content">
+					<p>Men</p>
+					<p>Women</p>
+					<p>Boys</p>
+					<p>Girls</p>
+					<p>Junior Boys</p>
+					<p>Infants</p>
+				</div>
+			</div>
 
-      <div class="Electronics subOptions">
-        <div class="dropdown-content">
-          <p>Mobiles & Tablets</p>
-          <p>TV & Speaker</p>
-          <p>Home Appliances</p>
-          <p>Computers</p>
-          <p>Cameras</p>
-          <p>Kitchen Appliances</p>
-          <p>Personal Care & Grooming</p>
-          <p>Smart Devices</p>
-          <p>Gaming</p>
-          <p>Accessories</p>
-          <p>resQ Services</p>
-          <p>Phones</p>
-          <p>Office Products</p>
-          <p>Health Care Devices</p>
-          <p>Electronic Musical Instruments</p>
-        </div>
-      </div>
+			<div class="Electronics subOptions">
+				<div class="dropdown-content">
+					<p>Mobiles & Tablets</p>
+					<p>TV & Speaker</p>
+					<p>Home Appliances</p>
+					<p>Computers</p>
+					<p>Cameras</p>
+					<p>Kitchen Appliances</p>
+					<p>Personal Care & Grooming</p>
+					<p>Smart Devices</p>
+					<p>Gaming</p>
+					<p>Accessories</p>
+					<p>resQ Services</p>
+					<p>Phones</p>
+					<p>Office Products</p>
+					<p>Health Care Devices</p>
+					<p>Electronic Musical Instruments</p>
+				</div>
+			</div>
 
-      <div class="Beauty subOptions">
-        <div class="dropdown-content">
-          <p>Make-Up</p>
-          <p>Hair</p>
-          <p>Skin Care</p>
-          <p>Fragrances</p>
-          <p>Personal Care</p>
-          <p>Mom & Baby</p>
-          <p>Men's Grooming</p>
-          <p>Tools & Appliances</p>
-          <p>Wellness</p>
-          <p>Fitness</p>
-          <p>Ayush</p>
-          <p>Treatments</p>
-        </div>
-      </div>
+			<div class="Beauty subOptions">
+				<div class="dropdown-content">
+					<p>Make-Up</p>
+					<p>Hair</p>
+					<p>Skin Care</p>
+					<p>Fragrances</p>
+					<p>Personal Care</p>
+					<p>Mom & Baby</p>
+					<p>Men's Grooming</p>
+					<p>Tools & Appliances</p>
+					<p>Wellness</p>
+					<p>Fitness</p>
+					<p>Ayush</p>
+					<p>Treatments</p>
+				</div>
+			</div>
 
-      <div class="HomeImp subOptions">
-        <div class="dropdown-content">
-          <p>Auto Care</p>
-          <p>Building Supplies & Measuring Tools</p>
-          <p>Carpentry</p>
-          <p>Electrical</p>
-          <p>Hardware & Plumbing</p>
-          <p>Home Cleaning & Organisation</p>
-          <p>Industrial & Scientific Supplies</p>
-          <p>Home Safety & Automation</p>
-          <p>Kitchen & Bath Fixtures</p>
-          <p>Packaging Supplies</p>
-          <p>Paint, Wall Treatments & Supplies</p>
-          <p>Power & Hand Tools</p>
-        </div>
-      </div>
+			<div class="HomeImp subOptions">
+				<div class="dropdown-content">
+					<p>Auto Care</p>
+					<p>Building Supplies & Measuring Tools</p>
+					<p>Carpentry</p>
+					<p>Electrical</p>
+					<p>Hardware & Plumbing</p>
+					<p>Home Cleaning & Organisation</p>
+					<p>Industrial & Scientific Supplies</p>
+					<p>Home Safety & Automation</p>
+					<p>Kitchen & Bath Fixtures</p>
+					<p>Packaging Supplies</p>
+					<p>Paint, Wall Treatments & Supplies</p>
+					<p>Power & Hand Tools</p>
+				</div>
+			</div>
 
-      <div class="Sports subOptions">
-        <div class="dropdown-content">
-          <p>Toys & Games</p>
-          <p>Bags & Travel Luggage</p>
-          <p>Sporting Goods & Fitness Equipments</p>
-        </div>
-      </div>
+			<div class="Sports subOptions">
+				<div class="dropdown-content">
+					<p>Toys & Games</p>
+					<p>Bags & Travel Luggage</p>
+					<p>Sporting Goods & Fitness Equipments</p>
+				</div>
+			</div>
 
-      <!-- #region - nav-bar-content-->
-      <div class="nav-bar">
-        <!-- top navbar -->
-        <div class="nav-bar-top">
-          <div class="flex-nav-top">
-            <div class="menu-icon" onclick="sidenav()" id="menu">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-            <div class="main-logo">
-              <a href="index.html"><img src="image/logo1.png" alt="logo" /></a>
-            </div>
-            <div class="search-bar">
-              <input
-                type="text"
-                placeholder="Search essentials, groceries, and more ..."
-                oninput="search()"
-              />
-            </div>
-            <div class="login-signup">
-              <div><img src="image/user.png" alt="" /></div>
-              <div>
-                <a href="login.html" id="signIn_Logout"> Sign in / Sign up</a>
-              </div>
-            </div>
-            <div class="cart">
-              <div><img src="image/cart.png" alt="cart" /></div>
-              <div><a href="cart.html">Cart</a></div>
-            </div>
-          </div>
-        </div>
-        <!-- bottom navbar -->
-        <div class="nav-bar-bottom">
-          <div class="flex-nav-bottom">
-            <div class="nav-bar-location">
-              <div>
-                <img src="image/location.png" alt="" />
-              </div>
-              <div class="location-detail">
-                <p>Deliver to</p>
-                <h4 id="location_icon">400020</h4>
-              </div>
-            </div>
-            <div class="nav-bar-options">
-              <div class="upArrow">
-                <a href="product.html">Groceries</a>
-              </div>
+			<!-- #region - nav-bar-content-->
+			<div class="nav-bar">
+				<!-- top navbar -->
+				<div class="nav-bar-top">
+					<div class="flex-nav-top">
+						<div class="menu-icon" onclick="sidenav()" id="menu">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="main-logo">
+							<a href="index.html"><img src="image/logo1.png" alt="logo" /></a>
+						</div>
+						<div class="search-bar">
+							<input
+								type="text"
+								placeholder="Search essentials, groceries, and more ..."
+								oninput="search()"
+							/>
+						</div>
+						<div class="login-signup">
+							<div><img src="image/user.png" alt="" /></div>
+							<div>
+								<a href="login.html" id="signIn_Logout"> Sign in / Sign up</a>
+							</div>
+						</div>
+						<div class="cart">
+							<div><img src="image/cart.png" alt="cart" /></div>
+							<div><a href="cart.html">Cart</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- bottom navbar -->
+				<div class="nav-bar-bottom">
+					<div class="flex-nav-bottom">
+						<div class="nav-bar-location">
+							<div>
+								<img src="image/location.png" alt="" />
+							</div>
+							<div class="location-detail">
+								<p>Deliver to</p>
+								<h4 id="location_icon">400020</h4>
+							</div>
+						</div>
+						<div class="nav-bar-options">
+							<div class="upArrow">
+								<a href="product.html">Groceries</a>
+							</div>
 
-              <div class="upArrow">
-                <a href="product.html">Premium Fruits</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Home & Kitchen</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Fashion</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Electronics</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Beauty</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Home Improvement</a>
-              </div>
-              <div class="upArrow">
-                <a href="product.html">Sports, Toys & Luggage</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+							<div class="upArrow">
+								<a href="product.html">Premium Fruits</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Home & Kitchen</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Fashion</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Electronics</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Beauty</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Home Improvement</a>
+							</div>
+							<div class="upArrow">
+								<a href="product.html">Sports, Toys & Luggage</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div id="mysidebar" class="sidenav">
-        <div id="myacc" class="myacc">
-          <a href="" class="closebtn" onclick="closenav()"> ✖</a>
-          <button id="hello_button" onclick="signin()">
-            <span id="hello_icon" class="hello"> </span>
-            <div id="user-img">
-              <img src="image/user.png" width="18px" alt="" />
-            </div>
-            <h3 id="hello_text" class="hello" onclick="signin()">
-              Hello, Sign in
-            </h3>
-          </button>
+			<div id="mysidebar" class="sidenav">
+				<div id="myacc" class="myacc">
+					<a href="" class="closebtn" onclick="closenav()"> ✖</a>
+					<button id="hello_button" onclick="signin()">
+						<span id="hello_icon" class="hello"> </span>
+						<div id="user-img">
+							<img src="image/user.png" width="18px" alt="" />
+						</div>
+						<h3 id="hello_text" class="hello" onclick="signin()">
+							Hello, Sign in
+						</h3>
+					</button>
 
-          <div id="account">
-            <div id="account_box" class="accdiv" onclick="account()">
-              Account
-            </div>
-            <div id="order_box" class="accdiv">Orders</div>
-          </div>
-        </div>
+					<div id="account">
+						<div id="account_box" class="accdiv" onclick="account()">
+							Account
+						</div>
+						<div id="order_box" class="accdiv">Orders</div>
+					</div>
+				</div>
 
-        <div id="sidenav_home">
-          <a href="index.html">Home</a>
-          <a href="#">Shop by Category</a>
-          <a href="#">My list</a>
-          <a href="#">JioMart wallet</a>
-          <a href="#">JioMart Gift Store</a>
-          <a href="#">JioMart Gift Card</a>
-          <a href="#">GoGreen with JioMart</a>
-          <a href="#">Coupon Store</a>
-          <a href="#">All offers</a>
+				<div id="sidenav_home">
+					<a href="index.html">Home</a>
+					<a href="#">Shop by Category</a>
+					<a href="#">My list</a>
+					<a href="#">JioMart wallet</a>
+					<a href="#">JioMart Gift Store</a>
+					<a href="#">JioMart Gift Card</a>
+					<a href="#">GoGreen with JioMart</a>
+					<a href="#">Coupon Store</a>
+					<a href="#">All offers</a>
 
-          <div class="sideLine"></div>
+					<div class="sideLine"></div>
 
-          <a href="#">My Account</a>
-          <a href="#">Need Help</a>
-          <a href="#">About us</a>
-          <a href="#">Guide</a>
-          <div class="sideLine"></div>
-          <h4>CONTACT US</h4>
-          <p>
-            WhatsApp us :
-            <a
-              href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&app_absent=0"
-              target="_blank"
-              >70003 70003</a
-            >
-          </p>
-          <span id="footerspan">
-            <p>Call Us : <a href="">1800 890 1222</a></p>
-            <p>8:00 AM to 8:00 PM,365 days</p>
-          </span>
-          <p>
-            Please note that you are accessing the BETA Version of
-            <a href="">www.jiomart.com</a>
-          </p>
-          <p>
-            Should you encounter any bugs, glitches, lack of functionality,
-            delayed deliveries, billing errors or other problems on the beta
-            website, please email us on <a href="">cs@jiomart.com</a>
-          </p>
-          <h4>DOWNLOAD APP</h4>
-          <div id="nav-playstore">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.jpl.jiomart"
-              target="_blank"
-              style="margin-right: 16px"
-            >
-              <img
-                src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png"
-                alt="Donwload Jio mart app from Play store"
-              />
-            </a>
-            <a
-              href="https://apps.apple.com/in/app/jiomart/id1522085683"
-              target="_blank"
-            >
-              <img
-                src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png"
-                alt="Donwload Jio mart for IOS app from App store"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+					<a href="#">My Account</a>
+					<a href="#">Need Help</a>
+					<a href="#">About us</a>
+					<a href="#">Guide</a>
+					<div class="sideLine"></div>
+					<h4>CONTACT US</h4>
+					<p>
+						WhatsApp us :
+						<a
+							href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&app_absent=0"
+							target="_blank"
+							>70003 70003</a
+						>
+					</p>
+					<span id="footerspan">
+						<p>Call Us : <a href="">1800 890 1222</a></p>
+						<p>8:00 AM to 8:00 PM,365 days</p>
+					</span>
+					<p>
+						Please note that you are accessing the BETA Version of
+						<a href="">www.jiomart.com</a>
+					</p>
+					<p>
+						Should you encounter any bugs, glitches, lack of functionality,
+						delayed deliveries, billing errors or other problems on the beta
+						website, please email us on <a href="">cs@jiomart.com</a>
+					</p>
+					<h4>DOWNLOAD APP</h4>
+					<div id="nav-playstore">
+						<a
+							href="https://play.google.com/store/apps/details?id=com.jpl.jiomart"
+							target="_blank"
+							style="margin-right: 16px"
+						>
+							<img
+								src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png"
+								alt="Donwload Jio mart app from Play store"
+							/>
+						</a>
+						<a
+							href="https://apps.apple.com/in/app/jiomart/id1522085683"
+							target="_blank"
+						>
+							<img
+								src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png"
+								alt="Donwload Jio mart for IOS app from App store"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 
-      <!-- #endregion - nav-bar-->
-    </header>
-    <!-- cart page starts -->
-    <!-- <div id='cart-page-starting-point'> -->
-    <main>
-      <div id="cart-page-top-layer">
-        <div class="cart-page-top-layer-left">
-          <p>My Cart</p>
-          <span id="total_length"></span>
-        </div>
-        <div class="cart-page-top-layer-right">
-          <img
-            src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
-            alt=""
-          /><span>Cart</span>
-          <hr />
-          <img
-            id="order-sum"
-            src="https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg"
-            alt=""
-          /><span>Order Summary</span>
-          <hr />
-          <img
-            id="paym"
-            src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
-            alt=""
-          /><span>Payment</span>
-        </div>
-      </div>
+			<!-- #endregion - nav-bar-->
+		</header>
+		<!-- cart page starts -->
+		<!-- <div id='cart-page-starting-point'> -->
+		<main>
+			<div id="cart-page-top-layer">
+				<div class="cart-page-top-layer-left">
+					<p>My Cart</p>
+					<span id="total_length"></span>
+				</div>
+				<div class="cart-page-top-layer-right">
+					<img
+						src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
+						alt=""
+					/><span onclick="cartMain()">Cart</span>
+					<hr />
+					<img
+						id="order-sum"
+						src="https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg"
+						alt=""
+					/><span onclick="summary()">Order Summary</span>
+					<hr />
+					<img
+						id="paym"
+						src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
+						alt=""
+					/><span onclick="payment()">Payment</span>
+				</div>
+			</div>
 
-      <div id="cart-page-bottom-layer">
-        <div id="cart-page-bottom-layer-left-side">
-          <div id="cart-left-side-top-div">
-            <p>Groceries Basket</p>
-            <span id="balance"></span>
-          </div>
-          <div id="cart-left-side-top-para">
-            <p>
-              Shop groceries worth ₹1499 & get sugar at ₹9 (Offer is applicable
-              only on products sold by Reliance Retail. For specific exclusions
-              & offer details refer T&C)
-            </p>
-          </div>
-          <div class="prdoucts-added"></div>
-          
-        </div>
+			<div id="cart-page-bottom-layer">
+				<div id="cart-page-bottom-layer-left-side">
+					<div id="cart-left-side-top-div">
+						<p>Groceries Basket</p>
+						<span id="balance"></span>
+					</div>
+					<div id="cart-left-side-top-para">
+						<p>
+							Shop groceries worth ₹1499 & get sugar at ₹9 (Offer is applicable
+							only on products sold by Reliance Retail. For specific exclusions
+							& offer details refer T&C)
+						</p>
+					</div>
+					<div class="prdoucts-added"></div>
+				</div>
 
-        <div id="right-side-cart-items">
-          <div class="apply-promo-code">
-            <div>
-              <h3>Apply Coupon</h3>
-              <h5>VIEW ALL</h5>
-            </div>
-            <div>
-              <img
-                src="https://img.icons8.com/ios-filled/40/ACACAC/discount--v2.png"
-              />
-              <input
-                type="email"
-                id="discount-coupon-code"
-                placeholder=" Enter Coupen Code."
-              />
-              <p id="apl">Apply</p>
-            </div>
-          </div>
-          <div id="payment-details-final">
-            <div>
-              <div>
-                <h3>Payment details</h3>
-              </div>
-              <div class="amount">
-                <p>MRP Total</p>
-                <span id="total_bill_amount"></span>
-              </div>
-              <hr />
-              <div class="disct">
-                <p>Product discount</p>
-                <p id="Discounted-Price"></p>
-              </div>
-              <hr />
-              <div class="ttlamt">
-                <p>Total Amount</p>
-                <p id="checkout_price"></p>
-              </div>
-              <div>
-                <p>
-                  <!--  -->
-                </p>
-                <p id="saved-price"></p>
-              </div>
-            </div>
-          </div>
-          <div id="payment-btn">
-            <button id="CheckOut_Button">Place Order</button>
-            <button id="make-payment" hidden>Make a Payment</button>
-          </div>
-        </div>
-      </div>
-    </main>
+				<div id="right-side-cart-items">
+					<div class="apply-promo-code">
+						<div>
+							<h3>Apply Coupon</h3>
+							<h5>VIEW ALL</h5>
+						</div>
+						<div>
+							<img
+								src="https://img.icons8.com/ios-filled/40/ACACAC/discount--v2.png"
+							/>
+							<input
+								type="email"
+								id="discount-coupon-code"
+								placeholder=" Enter Coupen Code."
+							/>
+							<p id="apl">Apply</p>
+						</div>
+					</div>
+					<div id="payment-details-final">
+						<div>
+							<div>
+								<h3>Payment details</h3>
+							</div>
+							<div class="amount">
+								<p>MRP Total</p>
+								<span id="total_bill_amount"></span>
+							</div>
+							<hr />
+							<div class="disct">
+								<p>Product discount</p>
+								<p id="Discounted-Price"></p>
+							</div>
+							<hr />
+							<div class="ttlamt">
+								<p>Total Amount</p>
+								<p id="checkout_price"></p>
+							</div>
+							<div>
+								<p>
+									<!--  -->
+								</p>
+								<p id="saved-price"></p>
+							</div>
+						</div>
+					</div>
+					<div id="payment-btn">
+						<button id="CheckOut_Button">Place Order</button>
+						<button id="make-payment" hidden>Make a Payment</button>
+					</div>
+				</div>
+			</div>
+		</main>
 
-    <!-- </div> -->
-    <!-- cart page ends -->
-    <script src="./Scripts/cart.js"></script>
-  </body>
+		<!-- </div> -->
+		<!-- cart page ends -->
+		<script src="./Scripts/cart.js"></script>
+	</body>
 </html>

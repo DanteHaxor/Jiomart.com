@@ -28,6 +28,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="Styles/payment.css">
+	<link rel="icon" href="image/logo.jpg" />
+
 	<!--Coded by Pt. Prashant Tripathi @ptprashanttripathi on 14th Oct 2020 -->
 
 <body>
@@ -40,23 +42,23 @@
           <span></span>
         </div>
         <div class="cart-page-top-layer-right">
-          <img
-            src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
-            alt=""
-          /><span>Cart</span>
-          <hr />
-          <img
-            id="order-sum"
-            src="https://www.jiomart.com/msassets/images/icons/orders_review_active.svg"
-            alt=""
-          /><span>Order Summary</span>
-          <hr />
-          <img
-            id="paym"
-            src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
-            alt=""
-          /><span>Payment</span>
-        </div>
+			<img
+				src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg"
+				alt=""
+			/><span onclick="cartMain()">Cart</span>
+			<hr />
+			<img
+				id="order-sum"
+				src="https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg"
+				alt=""
+			/><span onclick="summary()">Order Summary</span>
+			<hr />
+			<img
+				id="paym"
+				src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg"
+				alt=""
+			/><span onclick="payment()">Payment</span>
+		</div>
       </div>
 	<center>
 		<div class="card">
@@ -88,11 +90,11 @@
 	document.querySelector("#linkpeform").addEventListener("submit",(e)=>{
 		e.preventDefault()
 		swal({
-  title: "Are you sure?",
-  text: "Once paid, you will not be able to undo it!",
-  icon: "warning",
-  buttons: true,
-  dangerMode: true,
+			title: "Are you sure?",
+			text: "Once paid, you will not be able to undo it!",
+		icon: "warning",
+		buttons: true,
+dangerMode:true,
 })
 .then((willDelete) => {
   if (willDelete) {
@@ -116,6 +118,20 @@ setTimeout(() => {
 	document.getElementById("logo").addEventListener("click",()=>{
       window.location.href="index.html"
 	})
+
+	
+function summary() {
+	window.location.href = "review.html";
+}
+
+function payment() {
+	window.location.href = "payment.html";
+}
+
+function cartMain() {
+  window.location.href = "cart.html";
+}
+
 </script>
 
 </html>
