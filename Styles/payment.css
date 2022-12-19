@@ -1,74 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 
 .card {
-	width: 350px;
-	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-	margin-top: 50px;
-	padding: 20px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 .text-box {
-	padding: 10px 20px;
-	margin: 10px 0;
-	box-sizing: border-box;
-	width: 100%;
-	outline: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
 }
 
 .btn {
-	background-color: rgb(76, 172, 212);
-	border: none;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
-	cursor: pointer;
-	font-size: 18px;
-	width: 100%;
-	margin: 15px 0px;
-	border-radius: 4px;
+  background-color: rgb(76, 172, 212);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 4px;
 }
 
 .btn:hover {
-	background-color: rgb(0,142,204);
+  background-color: rgb(0, 142, 204);
 }
 
 .card-content {
-	padding: 10px 20px;
+  padding: 10px 20px;
 }
+
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  header > div {
-    background-color: rgb(0, 142, 204);
-    padding-left: 200px;
-  }
-  #cart-page-top-layer {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
+  margin: 0;
+  padding: 0;
+}
 
-  }
+header>div {
+  background-color: rgb(0, 142, 204);
+  padding-left: 200px;
+}
 
-  .cart-page-top-layer-left {
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  .cart-page-top-layer-right {
-    display: flex;
-  }
+#cart-page-top-layer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
 
-  .cart-page-top-layer-right > hr {
-    height: 0.1px;
-    width: 100px;
-    margin: 15px 10px 0px 5px;
-  }
-  .cart-page-top-layer-right > span {
-    margin: 5px 5px 0px 9px;
-  }
+}
+
+.cart-page-top-layer-left {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.cart-page-top-layer-right {
+  display: flex;
+}
+
+.cart-page-top-layer-right>hr {
+  height: 0.1px;
+  width: 100px;
+  margin: 15px 10px 0px 5px;
+}
+
+.cart-page-top-layer-right>span {
+  margin: 5px 5px 0px 9px;
+}
