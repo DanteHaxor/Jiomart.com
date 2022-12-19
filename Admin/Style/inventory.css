@@ -28,6 +28,10 @@
     --color-dark-varient:#a3bdcc;
     --color-light:rgba(0,0,0,0.4);
     --box-shadow:0 2rem 3rem var(--color-light);
+} 
+.test{
+    background: var(--color-white);
+    color: var(--color-danger);
 }
 *{
     margin: 0;

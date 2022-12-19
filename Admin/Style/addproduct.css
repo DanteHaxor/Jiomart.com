@@ -91,6 +91,14 @@ small{
     border-radius: 50%;
     overflow: hidden;
 }
+tbody tr td input{
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-info-dark);
+    border-radius: var(--border-radius-3);
+    /* height: 2.2rem; */
+    padding: 0.8rem;
+}
+
 .text-muted{
     color: var(--color-info-dark);
 }
@@ -111,7 +119,14 @@ b{
 }
 .warning{
     color: var(--color-warning);
-}   
+}  
+.test{
+    background: var(--color-white);
+    color: var(--color-success);
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+} 
 aside{
     height: 100vh;
 }
