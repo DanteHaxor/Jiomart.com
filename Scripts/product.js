@@ -105,6 +105,42 @@ async function products() {
 }
 products();
 
+function priceSort() {
+	let mrp = document.querySelector("#sortPrice").value;
+	let str = "";
+
+	if (mrp == "asc") {
+		str = "MRP";
+		SortPriceLTH(str);
+	}
+	if (mrp == "dsc") {
+		str = "MRP";
+		SortPriceHTL(str);
+	}
+
+	if (mrp == "") {
+		products();
+	}
+}
+
+async function SortPriceLTH(MRP) {
+	let res = await fetch(
+		`https://639b037e31877e43d67f1598.mockapi.io/crud?sortBy=${MRP}`
+	);
+	let data = await res.json();
+	renderData(data);
+}
+
+async function SortPriceHTL(MRP) {
+	let res = await fetch(
+		`https://639b037e31877e43d67f1598.mockapi.io/crud?sortBy=${MRP}&order=desc`
+	);
+	let data = await res.json();
+	renderData(data);
+}
+
+//------------------------------------------------------------//
+
 function renderData(data) {
 	DealsSection.innerHTML = `${data
 		.map((el) => {
@@ -121,3 +157,5 @@ function renderData(data) {
 		.join(" ")}`;
 }
 //---------------------------------------products card render end------------------------------------//
+
+//---------------------------------------sort-----------------------------------------------//
