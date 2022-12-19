@@ -39,8 +39,7 @@ function displaydiscount(data){
 
         
     
-        document.getElementById("CheckOut_Button").addEventListener("click",()=>{
+        document.getElementById("make-payment").addEventListener("click",()=>{
             window.location.href="payment.html"
         })
 
-        
