@@ -11,7 +11,7 @@ addbtn.addEventListener("click",()=>{
         "stock":stock
     }
     if(obj.MRP=="" || obj.type=="" || obj.image=="" || obj.stock==""){
-        swal("","Something is missing!","danger")
+        swal("","Something is missing!","warning")
     }else{
     postdata(obj)
     }
