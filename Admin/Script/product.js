@@ -40,7 +40,8 @@ async function deletedata(id){
     let res=await fetch(`https://639b037e31877e43d67f1598.mockapi.io/crud/${id}`,{
         method:"DELETE"
     })
-    swal({
+	setTimeout(() => {
+		 swal({
   title: "Are you sure?",
   text: "Once deleted, you will not be able to recover this imaginary file!",
   icon: "warning",
@@ -56,6 +57,7 @@ async function deletedata(id){
     swal("Your imaginary file is safe!");
   }
 });
+	}, 2000);
    window.location.reload()
 }
 
