@@ -11,7 +11,7 @@ addbtn.addEventListener("click",()=>{
         "stock":stock
     }
     if(obj.MRP=="" || obj.type=="" || obj.image=="" || obj.stock==""){
-        swal("Something is missing!")
+        swal("","Something is missing!","danger")
     }else{
     postdata(obj)
     }
@@ -26,7 +26,7 @@ async function postdata(obj){
         },
         body:JSON.stringify(obj)
     })
-    swal(`${obj.type} has been added sucessfully`)
+    swal("",`${obj.type} has been added sucessfully`,"success")
     window.location.reload()
     }
     
