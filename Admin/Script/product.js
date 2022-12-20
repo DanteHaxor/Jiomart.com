@@ -57,8 +57,9 @@ async function deletedata(id){
     swal("Your imaginary file is safe!");
   }
 });
+		window.location.reload()
 	}, 2000);
-   window.location.reload()
+   
 }
 
 
