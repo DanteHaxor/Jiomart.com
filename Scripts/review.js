@@ -54,5 +54,5 @@ document.getElementById("make-payment").addEventListener("click", () => {
 
 let form=document.getElementById("form").addEventListener("submit",(e)=>{
 	e.preventDefault()
-	swal("test)
+	swal("test")
 })
