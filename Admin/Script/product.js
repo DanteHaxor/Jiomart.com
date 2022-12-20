@@ -58,7 +58,7 @@ async function deletedata(id){
   }
 });
 		window.location.reload()
-	}, 2000);
+	}, 5000);
    
 }
 
