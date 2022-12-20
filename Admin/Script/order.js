@@ -1,19 +1,3 @@
-let sidemenu=document.querySelector("aside");
-let menubtn=document.querySelector("#menu-btn");
-let closebtn=document.querySelector("#close-btn");
-let themetoggler=document.querySelector(".theme-toggler")
-
-menubtn.addEventListener("click",()=>{
-    sidemenu.style.display="block";
-})
-closebtn.addEventListener("click",()=>{
-    sidemenu.style.display="none";
-})
-themetoggler.addEventListener("click",()=>{
-    document.body.classList.toggle("dark-theme-variables");
-    themetoggler.querySelector("span").classList.toggle("active"); 
-})
-
 async function getdata(){
     let res=await fetch("https://639b1b94d5141501974b716f.mockapi.io/AddCart?page=1&limit=10")
     let data=await res.json()

@@ -1,6 +1,30 @@
 /* #region nav-bar */
 
-
+@media screen and (max-width:768px) {
+    .nav-bar-bottom{
+      display: none;
+    }
+    .main-logo img{
+      display: none;
+    }
+    .menu-icon{
+      margin-right: 8%;
+      margin-top: 0.8rem;
+    }
+    .login-signup>div{
+      display: none;
+    }
+    .cart>div{
+      display: none;
+    }
+    .search-bar input{
+      margin-top: 0.8rem;
+      width: 0.8rem;
+    }
+    #firstLine{
+      display: none;
+    }
+  }
 * {
     margin: 0;
     padding: 0;
