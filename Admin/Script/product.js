@@ -58,7 +58,7 @@ async function deletedata(id){
 });
 	setTimeout(() => { 
 	window.location.reload()	
-	}, 2000);
+	}, 3000);
    
 }
 
