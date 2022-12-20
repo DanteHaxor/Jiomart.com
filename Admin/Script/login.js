@@ -7,6 +7,6 @@ login_btn.addEventListener("submit", (event) => {
 		swal("", "Welcome Admin!", "success");
 		window.location.href = "/Admin/dashboard.html";
 	} else {
-		alert("Wrong Credentials");
+		swal("","Wrong Credentials!","warning");
 	}
 });
